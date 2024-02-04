@@ -4,6 +4,7 @@
 
 body {
     height: 100vh;
+    min-width:320px;
     background: black;
     color: #ffb300;
     font-family: monospace;
