@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>test new dsd sds asd</div>
+    <div class="welcome-screen">
+        <div class="welcome">
+            <h1>Welcome to the test page!</h1>
+        </div>
+        <p>Press 'Enter' to continue..</p>
+    </div>
+    <div class="second-screen hidden">
+        <h3 class="loading-content"></h3>
+        <div class="progress-bar">
+            <div class="loading-line"></div>
+        </div>
+    </div>
+    <div class="oops hidden">
+        <h3>Oops! An error occured.</h3>
+        <div onClick="enterApp()" type="button" class="try-again">Try Again</div>
+    </div>
+    <div class="link">
+        <a target="_blank" href="https://github.com/prslv/testdocker">github.com/prslv/testdocker</a>
+    </div>
 </body>
+<script src="app.js"></script>
+
 </html>
