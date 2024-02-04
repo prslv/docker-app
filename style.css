@@ -19,7 +19,12 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-
+.welcome-screen span {
+    cursor:pointer;
+}
+.welcome-screen span:hover {
+    text-decoration: underline;
+}
 .welcome {
     text-align: center;
     padding: 0px 25px;
@@ -183,7 +188,26 @@ body {
     color: black;
     border-color: orange;
 }
-
+.back-button {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    font-size: 1.2em;
+    align-items: center;
+    color: black;
+    background: orange;
+    padding: 7px 13px;
+    padding-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dim-hvr {
+    transition: .2s ease;
+}
+.dim-hvr:hover {
+    opacity: .9;
+}
 .hidden {
     display: none;
 }

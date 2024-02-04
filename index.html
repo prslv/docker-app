@@ -13,7 +13,7 @@
         <div class="welcome">
             <h1>Welcome to the test page!</h1>
         </div>
-        <p>Press 'Enter' to continue..</p>
+        <p>Press '<span onclick="enterApp()">Enter</span>' to continue..</p>
     </div>
     <div class="second-screen hidden">
         <h3 class="loading-content"></h3>
@@ -23,10 +23,19 @@
     </div>
     <div class="oops hidden">
         <h3>Oops! An error occured.</h3>
-        <div onClick="enterApp()" type="button" class="try-again">Try Again</div>
+        <div onclick="enterApp()" type="button" class="try-again">Try Again</div>
+        <div onclick="restartApp()" type="button" class="back-button dim-hvr">
+            <svg width="22px" height="22px" viewBox="0 0 24 24"fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="black" stroke-width="1.5" stroke-linecap="round"stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            Back to Home</div>
     </div>
     <div class="link">
-        <a target="_blank" href="https://github.com/prslv/testdocker">github.com/prslv/testdocker</a>
+        <a class="dim-hvr" target="_blank" href="https://github.com/prslv/docker-app">github.com/prslv/docker-app</a>
     </div>
 </body>
 <script src="app.js"></script>
