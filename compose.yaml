@@ -9,11 +9,11 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    image: prslv/testdocker:latest
+    image: docker-app:latest
     ports:
       - 1010:80
     volumes:
-      - C:\Users\presl\Desktop\testdocker:/var/www/html
+      - C:\Users\presl\Desktop\docker-app:/var/www/html
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
 # start the database before your application. The `db-data` volume persists the
